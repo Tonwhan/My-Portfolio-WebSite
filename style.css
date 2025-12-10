@@ -1,10 +1,37 @@
-body, body * {  
+@font-face {
+  font-family: "KakaoSans";
+  src: url("assets/fonts/KakaoBigSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KakaoSans";
+  src: url("assets/fonts/KakaoBigSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KakaoSans";
+  src: url("assets/fonts/KakaoBigSans-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body,
+body * {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 .custom-nav a {
   font-family: monospace;
+  padding-left: 24px;
   text-decoration: none;
+}
+#navboder {
+  border-bottom: 1px solid #0d6efd;
+  padding-bottom: 1rem;
 }
 .custom-github {
   width: 28px;
@@ -12,8 +39,23 @@ body, body * {
 }
 .custom-div2 {
   background-color: #0d6efd;
-  height: 500px;
-  border-top-left-radius: 32px;
-  border-top-right-radius: 32px;
+  height: 300px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+}
+#Kinstro {
+  font-family: "KakaoSans", sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+}
+#my-dream {
+  position: absolute;
+  bottom: 4px;
+  left: 24px;
+  color: white;
+  padding: 8px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
+/* Reponsive */
