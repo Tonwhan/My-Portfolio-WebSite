@@ -9,8 +9,8 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="text-center pt-5 custom-nav">
-      <div class="d-flex justify-content-center gap-5">
+    <nav id="navboder" class="pt-5 custom-nav">
+      <div class="d-flex gap-2">
         <a href="index.html">Home</a>
         <a href="Social.html">Social Media</a>
         <a href="Certi.html">Certificate</a>
@@ -27,21 +27,22 @@
     <!-- Content Here -->
     <div class="container pt-5">
       <div class="row align-items-center">
-        <div class="col">
+        <div class="col position-relative">
           <img
-            src="https://i.pinimg.com/736x/2d/45/28/2d45280db0ac96227b1cb0aa13f092e7.jpg"
+            style="border: none; outline: none"
+            src="assets/img/hearin.jpg"
             alt=""
-            class="img-fluid rounded-3"
+            class="img-fluid rounded-4"
           />
+          <h6 id="my-dream">저는 한국에서 개발자가 되고 싶습니다</h6>
         </div>
-
         <div class="col-6 custom-content">
-          <h1 class="text-primary fw-bold">What's up</h1>
-          <p class="fw-medium">I'm tonwhan.</p>
+          <h1 class="text-primary fw-bold glow">What's up</h1>
+          <p class="fw-semibold">I'm tonwhan.</p>
           <p class="fw-medium">Graphic Design UX/UI Motion Graphic.</p>
           <p class="fw-regular">I Miss NewJeans.</p>
           <div class="row">
-            <div class="col-auto">
+            <div class="col-auto" id="git">
               <a
                 class="text-decoration-none"
                 href="https://github.com/Tonwhan"
@@ -53,7 +54,7 @@
                 >
                   <img
                     class="pe-2 custom-github"
-                    src="assets/img/github.svg"
+                    src="assets/icon/github.svg"
                     alt=""
                     width="20"
                   />
@@ -61,7 +62,7 @@
                 </button>
               </a>
             </div>
-            <div class="col-auto">
+            <div class="col-auto" id="insta">
               <a
                 style="font-family: monospace"
                 class="text-decoration-none"
@@ -73,7 +74,7 @@
                 >
                   <img
                     class="pe-2 custom-github"
-                    src="assets/img/Instagram.svg"
+                    src="assets/icon/Instagram.svg"
                     alt=""
                     width="20"
                   />
@@ -81,7 +82,9 @@
                 </button>
               </a>
             </div>
-            <div class="col-auto">
+          </div>
+          <div class="row">
+            <div class="col-auto pt-3" id="youtube">
               <a
                 style="font-family: monospace"
                 class="text-decoration-none"
@@ -93,11 +96,31 @@
                 >
                   <img
                     class="pe-2 custom-github"
-                    src="assets/img/youtube.svg"
+                    src="assets/icon/youtube.svg"
                     alt=""
                     width="20"
                   />
                   Youtube
+                </button>
+              </a>
+            </div>
+            <div class="col-auto pt-3" id="tiktok">
+              <a
+                style="font-family: monospace"
+                class="text-decoration-none"
+                href="https://www.tiktok.com/@tonwhan_bebhop?is_from_webapp=1&sender_device=pc"
+              >
+                <button
+                  type="button"
+                  class="btn btn-light d-flex align-items-center fw-medium"
+                >
+                  <img
+                    class="pe-2 custom-github"
+                    src="assets/icon/tiktok.svg"
+                    alt=""
+                    width="20"
+                  />
+                  TikTok
                 </button>
               </a>
             </div>
@@ -110,7 +133,23 @@
       <div class="col container">
         <div class="container">
           <h1 class="text-white pt-5 fw-normal">Instroduction</h1>
-          <h5 class="text-white">소개</h5>
+          <h4 class="text-white" id="Kinstro">소개</h4>
+          <div
+            class="pt-3"
+            style="
+              text-decoration: underline;
+              border-bottom: 2px solid white;
+              opacity: 50%;
+            "
+          ></div>
+          <p class="pt-4 text-white fw-normal">
+            I’m Tonwhan—16 and based in Thailand. My focus is on shaping the
+            digital future with a hybrid skill set: Development meets Design. I
+            flow between clean code and vibrant visuals, crushing projects in
+            Graphic Design, UX/UI, and Motion Graphics. I’m here to build and to
+            create something fresh. Check out the work, and hit my line if you
+            want to collaborate. Let’s make something epic.
+          </p>
         </div>
       </div>
     </div>
