@@ -53,7 +53,7 @@ body * {
   width: 0;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s forwards, cursor 0.4s step-end infinite alternate;
+  animation: typing 2s forwards steps(18), cursor 0.4s step-end infinite alternate;
 }
 
 /* Cursor Blink */
