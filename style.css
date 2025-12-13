@@ -33,15 +33,20 @@ body * {
   border-bottom: 1px solid #0d6efd;
   padding-bottom: 1rem;
 }
+.custom-image{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 .custom-github {
   width: 28px;
   height: 28px;
 }
 .custom-div2 {
-  background-color: #0d6efd;
-  height: 300px;
+  background-color: #0d6efd;  
   border-top-left-radius: 36px;
   border-top-right-radius: 36px;
+  padding-bottom: 24px;
 }
 .custom-text-contain {
   display: inline-block;
