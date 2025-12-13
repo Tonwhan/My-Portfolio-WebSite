@@ -1,0 +1,49 @@
+.flip-main {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  perspective: 10000px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.front-main,
+.back-main {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.front-main {
+  transform: rotateY(0deg);
+}
+
+.back-main {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-main:hover .front-main {
+  transform: rotateY(-180deg);
+}
+
+.flip-main:hover .back-main {
+  transform: rotateY(0deg);
+}
+
+.front-main img,
+.back-main img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}

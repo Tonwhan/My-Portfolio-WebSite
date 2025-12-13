@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tonwhan</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Tonwhan</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main-card.css" />
   </head>
-  <body>
-    <!-- navbar -->
+  <body class="page-animate">
+    <!-- Navbar -->
     <div class="container">
       <nav id="navboder" class="pt-5 custom-nav">
         <div class="d-flex gap-2">
@@ -16,134 +17,109 @@
           <a href="Social.html">Social Media</a>
           <a href="Certi.html">Certificate</a>
           <a href="Contact.html">Contact</a>
-          <p class="text-black ms-auto end-0" style="pointer-events: none">
+          <p
+            class="text-black position-absolute end-0 pe-5"
+            style="pointer-events: none"
+          >
             @tonwhan_bebhop
           </p>
         </div>
       </nav>
     </div>
-
-    <!-- Content Here -->
-    <div class="container pt-5">
-      <div class="row align-items-center">
-        <div class="col position-relative">
-          <img
-            style="border: none; outline: none"
-            src="assets/img/kimmin.jpg"
-            alt=""
-            class="rounded-4 custom-image"
-          />
-          <h6 id="my-dream">저는 한국에서 개발자가 되고 싶습니다</h6>
+    <div class="container pt-5 pb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <div class="flip-main">
+            <div class="front-main">
+              <img
+                src="assets/img/kimmin.jpg"
+                alt="Tonwhan"
+                class="img-fluid"
+              />
+              <h6 id="my-dream" class="mt-2">
+                저는 한국에서 개발자가 되고 싶습니다
+              </h6>
+            </div>
+            <div class="back-main">
+              <h3>tonwhan</h3>
+            </div>
+          </div>
         </div>
-        <div class="col-6 custom-content">
-          <div class="custom-text-contain">
+
+        <div class="col-12 col-md-6 custom-content">
+          <div class="custom-text-contain mb-2">
             <h1 class="text-primary fw-bold custom-text">What's up</h1>
           </div>
-          <p class="fw-semibold">I'm tonwhan.</p>
-          <p class="fw-medium">Graphic Design UX/UI Motion Graphic.</p>
-          <p class="fw-regular">I Miss NewJeans.</p>
-          <div class="row">
-            <div class="col-auto" id="git">
-              <a
-                class="text-decoration-none"
-                href="https://github.com/Tonwhan"
-                style="font-family: monospace"
-              >
-                <button
-                  type="button"
-                  class="btn btn-light d-flex align-items-center fw-medium"
-                >
-                  <img
-                    class="pe-2 custom-github"
-                    src="assets/icon/github.svg"
-                    alt=""
-                    width="20"
-                  />
-                  Github
-                </button>
-              </a>
-            </div>
-            <div class="col-auto" id="insta">
-              <a
-                style="font-family: monospace"
-                class="text-decoration-none"
-                href="https://www.instagram.com/tonwhan_hatemarkzuckerberk/"
-              >
-                <button
-                  type="button"
-                  class="btn btn-light d-flex align-items-center fw-medium"
-                >
-                  <img
-                    class="pe-2 custom-github"
-                    src="assets/icon/Instagram.svg"
-                    alt=""
-                    width="20"
-                  />
-                  Instagram
-                </button>
-              </a>
-            </div>
+          <p class="fw-semibold mb-1">I'm tonwhan.</p>
+          <p class="fw-medium mb-1">Graphic Design · UX/UI · Motion Graphic</p>
+          <p class="fw-regular mb-3">I Miss NewJeans.</p>
+
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <a href="https://github.com/Tonwhan" class="text-decoration-none">
+              <button class="btn btn-light d-flex align-items-center fw-medium">
+                <img
+                  src="assets/icon/github.svg"
+                  alt=""
+                  width="20"
+                  class="me-2"
+                />Github
+              </button>
+            </a>
+            <a
+              href="https://www.instagram.com/tonwhan_hatemarkzuckerberk/"
+              class="text-decoration-none"
+            >
+              <button class="btn btn-light d-flex align-items-center fw-medium">
+                <img
+                  src="assets/icon/Instagram.svg"
+                  alt=""
+                  width="20"
+                  class="me-2"
+                />Instagram
+              </button>
+            </a>
           </div>
-          <div class="row">
-            <div class="col-auto pt-3" id="youtube">
-              <a
-                style="font-family: monospace"
-                class="text-decoration-none"
-                href="https://youtube.com/@tonwhan_bebhop?si=afFljtu_GnTlbM5R"
-              >
-                <button
-                  type="button"
-                  class="btn btn-light d-flex align-items-center fw-medium"
-                >
-                  <img
-                    class="pe-2 custom-github"
-                    src="assets/icon/youtube.svg"
-                    alt=""
-                    width="20"
-                  />
-                  Youtube
-                </button>
-              </a>
-            </div>
-            <div class="col-auto pt-3" id="tiktok">
-              <a
-                style="font-family: monospace"
-                class="text-decoration-none"
-                href="https://www.tiktok.com/@tonwhan_bebhop?is_from_webapp=1&sender_device=pc"
-              >
-                <button
-                  type="button"
-                  class="btn btn-light d-flex align-items-center fw-medium"
-                >
-                  <img
-                    class="pe-2 custom-github"
-                    src="assets/icon/tiktok.svg"
-                    alt=""
-                    width="20"
-                  />
-                  TikTok
-                </button>
-              </a>
-            </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              href="https://youtube.com/@tonwhan_bebhop"
+              class="text-decoration-none"
+            >
+              <button class="btn btn-light d-flex align-items-center fw-medium">
+                <img
+                  src="assets/icon/youtube.svg"
+                  alt=""
+                  width="20"
+                  class="me-2"
+                />YouTube
+              </button>
+            </a>
+            <a
+              href="https://www.tiktok.com/@tonwhan_bebhop"
+              class="text-decoration-none"
+            >
+              <button class="btn btn-light d-flex align-items-center fw-medium">
+                <img
+                  src="assets/icon/tiktok.svg"
+                  alt=""
+                  width="20"
+                  class="me-2"
+                />TikTok
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="pt-5"></div>
-    <div class="row custom-div2">
-      <div class="col container">
-        <div class="container">
-          <h1 class="text-white pt-5 fw-normal">Instroduction</h1>
-          <h4 class="text-white" id="Kinstro">소개</h4>
+    <div>
+      <div class="custom-div2">
+        <div class="container text-white">
+          <h1 class="pt-5 fw-normal">Introduction</h1>
+          <h4>소개</h4>
           <div
-            class="pt-3"
-            style="
-              text-decoration: underline;
-              border-bottom: 2px solid white;
-              opacity: 50%;
-            "
+            class="pb-3"
+            style="border-bottom: 2px solid white; opacity: 0.5"
           ></div>
-          <p class="pt-4 text-white fw-normal">
+          <p class="pt-4 fw-normal">
             I’m Tonwhan—16 and based in Thailand. My focus is on shaping the
             digital future with a hybrid skill set: Development meets Design. I
             flow between clean code and vibrant visuals, crushing projects in
@@ -154,6 +130,7 @@
         </div>
       </div>
     </div>
+
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
