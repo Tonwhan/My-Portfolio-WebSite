@@ -26,8 +26,8 @@
 }
 
 .back-main {
-  background-color: black;
-  color: white;
+  background-image: linear-gradient(to bottom,white 75% ,#007AFF 150%);
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -46,4 +46,21 @@
   object-fit: cover;
   border-radius: 12px;
   display: block;
+}
+.back-main img{
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 16px;
+}
+.back-main .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
